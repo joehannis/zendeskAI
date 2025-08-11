@@ -50,8 +50,8 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/joehannis/zendeskAI-public.git
-   cd zendeskAI-public
+   git clone https://github.com/joehannis/zendeskAI.git
+   cd zendeskAI
    ```
 
 2. Install the dependencies:
