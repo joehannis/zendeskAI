@@ -1,0 +1,75 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.m?js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "mjs"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js",
+      "**/?(*.)+(spec|test).js",
+      "**/?(*.)+(spec|test).mjs"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!@google/genai|openai|mathjs|mongodb|puppeteer)"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-transform-class-properties",
+      "@babel/plugin-transform-private-methods",
+      "@babel/plugin-transform-private-property-in-object"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@google-cloud/local-auth": "^3.0.1",
+    "@google/genai": "^1.0.1",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "csv-stringify": "^6.5.2",
+    "dotenv": "^16.5.0",
+    "esm": "^3.2.25",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "googleapis": "^105.0.0",
+    "html-to-text": "^9.0.5",
+    "jsonrepair": "^3.12.0",
+    "langchain": "^0.3.30",
+    "mathjs": "^14.5.2",
+    "openai": "^5.6.0",
+    "puppeteer": "^24.11.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.27.1",
+    "@babel/plugin-transform-private-methods": "^7.27.1",
+    "@babel/plugin-transform-private-property-in-object": "^7.27.1",
+    "@babel/preset-env": "^7.28.0",
+    "jest": "^29.7.0"
+  }
+}
